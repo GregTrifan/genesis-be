@@ -1,4 +1,5 @@
 const express = require("express");
+const ethers = require("ethers");
 
 // Initialize Express
 const app = express();
