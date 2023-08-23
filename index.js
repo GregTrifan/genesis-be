@@ -10,7 +10,7 @@ app.get("/",(req,res)=> {
 })
 
 
-app.get("/getPrice", async (req, res) => {
+app.get("/get-price", async (req, res) => {
     try {
         const network = "homestead"; // MAINNET
 
