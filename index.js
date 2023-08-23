@@ -19,10 +19,10 @@ app.get("/get-price", async (req, res) => {
       const GENESIS = new ethers.Contract(GENESIS_ADDRESS, GENESIS_ABI, provider);
       const currentPrice = await GENESIS.currentPrice();
 
-      res.send(currentPrice.toString()); // Convert to string to send as a response
+      res.send(currentPrice.toString());
 
   } catch(err) {
-      console.error(err); // Log the error for debugging purposes
+      console.error(err); // Log the error
       res.status(500).send("An error occurred while fetching the price.");
   }
 });
